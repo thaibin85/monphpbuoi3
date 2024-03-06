@@ -1,3 +1,5 @@
+<h1>Save to file</h1>
+<a href="form.html">Back to form</a>
 <?php
 // Lấy dữ liệu từ POST
 $name = $_POST['name'];
