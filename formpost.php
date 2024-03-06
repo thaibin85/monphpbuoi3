@@ -10,4 +10,9 @@ $email = $_POST['email'];
 echo "<h2>Cảm ơn bạn đã gửi thông tin!</h2>";
 echo "<p>Tên: " . $name . "</p>";
 echo "<p>Email: " . $email . "</p>";
+
+$output = $name . " # " . $email ."\n";
+$file = fopen("formdata.txt","ab");
+fwrite($file,$output);
+echo "Data written to file !!";
 ?>
